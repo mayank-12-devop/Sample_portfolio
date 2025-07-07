@@ -1,0 +1,94 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cool Landing Page | NI-AI Sample</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    body {
+      background: linear-gradient(to right, #1e3c72, #2a5298);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+    }
+    h1 {
+      font-size: 3rem;
+      animation: fadeIn 1s ease-in-out forwards;
+    }
+    p {
+      font-size: 1.2rem;
+      margin: 1rem 0;
+      animation: fadeIn 2s ease-in-out forwards;
+    }
+    .btn {
+      margin-top: 1.5rem;
+      padding: 0.8rem 2rem;
+      font-size: 1rem;
+      background: #fff;
+      
+      color: #2a5298;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+    .btn:hover {
+      background: #f0f0f0;
+      transform: scale(1.05);
+    }
+    
+    .p-link{
+      text-decoration: none;
+      padding: 5px 5px;
+      border:2px solid black;
+      color: white;
+      background:red;
+      border-radius: 999px;
+      
+    }
+    .card {
+      background: #fff;
+      color: #2a5298;
+      border-radius: 10px;
+      padding: 2rem;
+      max-width: 600px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      transform: translateY(30px);
+      opacity: 0;
+      animation: slideUp 1s ease forwards 1.5s;
+    }@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+  </style>
+</head>
+<body>
+  <h1>Welcome to Sample Project</h1>
+  <p>This landing page is built using pure HTML and CSS with animations and hover effects.</p>
+  <div class="card">
+    <h2>Hello, I'm Mayank!</h2>
+    <p>I design clean, responsive websites and teach coding .
+    give me a chance to serve you I am damn sure I  you will be disappointed with me</p>
+    <button class="btn"><a class="p-link" href="project1.html">View Portfolio</a></button>
+    <h1>👆👆</h1>
+  </div>
+</body>
+</html>
